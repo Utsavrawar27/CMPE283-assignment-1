@@ -18,7 +18,7 @@ The following steps followed to develop and test the kernel module:
 4.	Open the Cloud Shell by clicking on the icon at the top right corner.
 
 
-5.	Create a custom image with the special license key that is required for nested virtualization.
+5.	Create a custom image with the special license key that is required for nested virtualization.\
 gcloud compute images create IMAGE_NAME \
   --source-disk DISK_NAME \
   --source-disk-zone ZONE \
