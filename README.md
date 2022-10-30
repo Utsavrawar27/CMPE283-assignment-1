@@ -49,9 +49,9 @@ viii.	Click on Create button to create the Linux instance.\
 10.	Copy the template "cmpe283-1.c" file and the template "Makefile" provided by the professor to the cmpe283-assing directory.
 11.	Modify “cmpe283-1.c" file, add all others 5 MSRs as explained in the assignment description:\
 i.	By referring SDM, created structures with name (description) and bit positions for Primary Processor based, Secondary Processor based, Tertiary Processor, Entry and Exit controls.\
-ii.	In order to detect and print VMX capabilities of CPU, the function report_capability ( ) is called with appropriate parameters passed in order to print Primary Processor based, Secondary Processor based, Tertiary Processor, Entry and Exit controls.\
+ii.	In order to detect and print VMX capabilities of CPU, the function report_capability ( ) is called with appropriate parameters passed in order to print Primary Processor based, Secondary Processor based, Tertiary Processor, Entry and Exit controls.
 12.	Run below command:
->> apt install gcc make
+>> apt install gcc make \
 >> sudo apt-get linux-headers-$(uname -r)
 13.	Build the module using the following command inside the cmpe283-assing directory.
 >> make
