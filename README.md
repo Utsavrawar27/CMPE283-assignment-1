@@ -24,15 +24,15 @@ gcloud compute images create IMAGE_NAME \
   --source-disk-zone ZONE \
   --licenses https://www.googleapis.com/compute/v1/projects/vm-options/global/licenses/enable-vmx
 6.	Optional, delete the source disk after creating the image with the special license.
-7.	Create a VM that uses the new image with the special license.
-i.	Name: For example “instance-1”.
-ii.	Region: Select the Region where the custom image was created. example "us-west1-b"
-iii.	Machine Family: General Purpose
-iv.	Series: Select "N2" for lab
-v.	Machine Type: Select “N2-standard-8 (8 vCPU, 32 GB Memory)” → This is recommended for lab setup; however you can select any other combination as per your requirement.
-vi.	Then click the 'Change' button for the Boot Disk selection. You need to select your custom image "cmpe-283-image".
-vii.	Then select the Firewall settings from the main screen and Select both HTTP and HTTPS traffic.
-viii.	Click on Create button to create the Linux instance.
+7.	Create a VM that uses the new image with the special license.\
+i.	Name: For example “instance-1”.\
+ii.	Region: Select the Region where the custom image was created. example "us-west1-b".\
+iii.	Machine Family: General Purpose.\
+iv.	Series: Select "N2" for lab.\
+v.	Machine Type: Select “N2-standard-8 (8 vCPU, 32 GB Memory)” → This is recommended for lab setup; however you can select any other combination as per your requirement.\
+vi.	Then click the 'Change' button for the Boot Disk selection. You need to select your custom image "cmpe-283-image".\
+vii.	Then select the Firewall settings from the main screen and Select both HTTP and HTTPS traffic.\
+viii.	Click on Create button to create the Linux instance.\
 
 ![image](https://user-images.githubusercontent.com/40047632/198859746-3bc3ac78-d2e3-445f-8d24-eea09dfa2cf0.png)
 
@@ -47,9 +47,9 @@ viii.	Click on Create button to create the Linux instance.
 9.	Create a new directory named "cmpe283-assing".
 >> mkdir cmpe283-assing
 10.	Copy the template "cmpe283-1.c" file and the template "Makefile" provided by the professor to the cmpe283-assing directory.
-11.	Modify “cmpe283-1.c" file, add all others 5 MSRs as explained in the assignment description:
-i.	By referring SDM, created structures with name (description) and bit positions for Primary Processor based, Secondary Processor based, Tertiary Processor, Entry and Exit controls.
-ii.	In order to detect and print VMX capabilities of CPU, the function report_capability ( ) is called with appropriate parameters passed in order to print Primary Processor based, Secondary Processor based, Tertiary Processor, Entry and Exit controls.
+11.	Modify “cmpe283-1.c" file, add all others 5 MSRs as explained in the assignment description:\
+i.	By referring SDM, created structures with name (description) and bit positions for Primary Processor based, Secondary Processor based, Tertiary Processor, Entry and Exit controls.\
+ii.	In order to detect and print VMX capabilities of CPU, the function report_capability ( ) is called with appropriate parameters passed in order to print Primary Processor based, Secondary Processor based, Tertiary Processor, Entry and Exit controls.\
 12.	Run below command:
 >> apt install gcc make
 >> sudo apt-get linux-headers-$(uname -r)
